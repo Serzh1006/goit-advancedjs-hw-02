@@ -1,6 +1,31 @@
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+
+.menu-link {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: darkcyan;
+}
+.menu-link:hover,
+.menu-link:focus {
+  text-decoration: underline;
+  color: rgb(255, 98, 0);
+}
+
 .timer {
   display: flex;
   gap: 10px;
+  margin-left: 15px;
+}
+
+input {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .value {
@@ -17,4 +42,65 @@
   font-size: 13px;
   text-transform: uppercase;
   line-height: 1.1;
+}
+
+.form {
+  margin-left: 60px;
+  width: 210px;
+}
+
+.delay {
+  display: block;
+  margin: 0;
+  margin-top: 10px;
+  width: 208px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.box-input {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  width: 200px;
+  padding: 0 0 10px 10px;
+}
+
+.ful-radio,
+.red-radio {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.btn-submit {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  box-shadow: 0 5px 0 rgb(239, 199, 143);
+  transition-property: transform, box-shadow;
+  transition-duration: 250ms, 250ms;
+  transition-timing-function: ease-out, ease-out;
+}
+
+.btn-submit:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+.back-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  display: block;
+  text-decoration: none;
+  margin: 20px 0 30px 20px;
+  color: rgb(225, 93, 11);
+}
+
+.back-link:hover,
+.back-link:focus {
+  text-decoration: underline;
 }
